@@ -1,86 +1,152 @@
-Customer Churn Analysis & Prediction
+# 📊 Customer Churn Analysis & Prediction
 
-An end-to-end data analytics project focused on analyzing historical customer churn and predicting future churners using SQL, Power BI, and Machine Learning.
+An end-to-end Data Analytics and Machine Learning project designed to analyze customer churn behavior, uncover key retention drivers, and predict customers at risk of leaving. The solution combines SQL-based ETL processes, interactive Power BI dashboards, and predictive Machine Learning models to enable data-driven business decisions and proactive customer retention strategies.
 
-1) Business Objective
+---
 
-Customer churn directly impacts revenue and growth.
+## 🎯 Business Problem
+
+Customer churn is one of the most critical challenges for subscription-based and service-oriented businesses. Losing existing customers directly impacts revenue, acquisition costs, and long-term growth.
+
 This project aims to:
 
-* Identify key drivers behind customer churn
+* Identify the primary factors contributing to customer churn.
+* Analyze churn trends across demographic, geographic, and service dimensions.
+* Predict high-risk customers before they churn.
+* Support targeted retention campaigns through actionable insights.
 
-* Analyze churn patterns across demographic, geographic, and service dimensions
+---
 
-* Predict high-risk customers using Machine Learning
+## 🛠️ Tech Stack
 
-* Enable data-driven retention strategies
+| Technology                          | Purpose                                      |
+| ----------------------------------- | -------------------------------------------- |
+| Microsoft SQL Server                | ETL Pipeline, Data Cleaning & Transformation |
+| SQL Server Management Studio (SSMS) | Database Management                          |
+| Power BI                            | Data Modeling & Interactive Dashboards       |
+| Python                              | Machine Learning Development                 |
+| Scikit-learn                        | Predictive Modeling (Random Forest)          |
+| Pandas & NumPy                      | Data Processing & Analysis                   |
 
-2) Tech Stack
+---
 
-* Microsoft SQL Server – ETL process, data cleaning, view creation
+## 🔄 Project Workflow
 
-* SQL Server Management Studio – Database management
+### 1️⃣ Data Extraction, Transformation & Loading (ETL)
 
-* Microsoft Power BI – Data modeling & interactive dashboards
+* Imported raw customer datasets into SQL Server staging tables.
+* Performed data cleaning, validation, and transformation.
+* Handled missing values and standardized categorical fields.
+* Created production-ready tables and analytical SQL views for reporting.
 
-* Python – Machine Learning implementation
+### 2️⃣ Data Modeling & Visualization
 
-* scikit-learn – Random Forest classifier
+Developed an interactive Power BI dashboard featuring:
 
-3) Project Workflow
+* Customer Segmentation Analysis
+* Churn Trend Monitoring
+* Service Usage Insights
+* Geographic Churn Distribution
+* Executive KPI Overview
 
- ETL in SQL Server
+#### Key DAX Measures
 
-- Imported raw CSV data into staging table
+* Total Customers
+* Churned Customers
+* Churn Rate (%)
+* New Customer Acquisition
+* Customer Retention Metrics
 
-- Cleaned null values & standardized categorical fields
+#### Custom Calculated Columns
 
-- Created production table and analytical views
+* Churn Flag
+* Age Group Classification
+* Tenure Group Segmentation
+* Risk Categorization
 
-- Data Modeling in Power BI
+---
 
-- Built calculated columns (Churn Flag, Age Group, Tenure Group)
+### 3️⃣ Machine Learning Prediction
 
-- Created DAX measures (Total Customers, Churn Rate, New Joiners)
+Built a predictive churn model to identify customers likely to leave.
 
-- Designed interactive Executive Dashboard
+#### Model Development
 
-Machine Learning Prediction
+* Encoded categorical features using Label Encoding.
+* Performed train-test split (80/20).
+* Trained a Random Forest Classifier.
+* Evaluated model performance using:
 
-- Preprocessed categorical variables using label encoding
+  * Confusion Matrix
+  * Classification Report
+  * Accuracy Metrics
 
-- Trained Random Forest model (80/20 split)
+#### Prediction Outcome
 
-- Evaluated using confusion matrix & classification report
+* Classified customers based on churn probability.
+* Generated actionable churn-risk predictions.
+* Enabled proactive customer retention planning.
 
-- Predicted churn risk for new customers
+---
 
-Dashboard Highlights
+## 📈 Dashboard Highlights
 
-- KPI Cards: Total Customers, Total Churn, Churn Rate %, New Joiners
+### Executive KPI Dashboard
 
-- Churn Analysis by Contract, Payment Method & Tenure
+* Total Customers
+* Total Churned Customers
+* Churn Rate (%)
+* New Customer Joiners
 
-- Geographic churn distribution (Top States)
+### Churn Analytics
 
-- Service-level churn analysis
+* Churn by Contract Type
+* Churn by Payment Method
+* Churn by Customer Tenure
+* Churn by Service Adoption
+* Geographic Churn Distribution
 
-- Dedicated Churn Prediction page for high-risk customers
+### Predictive Analytics
 
- Machine Learning Impact
+* High-Risk Customer Identification
+* Churn Probability Assessment
+* Retention Opportunity Analysis
 
-- Identified key churn-driving features
+---
 
-- Predicted high-risk customers before churn occurs
+## 🔍 Key Business Insights
 
-- Enabled proactive retention targeting
+### 📌 Contract Type Matters
 
-4 Key Insights
+Customers on month-to-month contracts exhibit significantly higher churn rates compared to customers on long-term contracts.
 
-- Month-to-month contracts show the highest churn rate
+### 📌 Customer Tenure Impacts Retention
 
-- Short-tenure customers are more likely to churn
+New and short-tenure customers are substantially more likely to churn, highlighting the importance of onboarding and engagement strategies.
 
-- Certain payment methods correlate with higher churn
+### 📌 Payment Behavior Influences Churn
 
-- Service adoption significantly influences churn probability
+Specific payment methods demonstrate stronger associations with customer attrition.
+
+### 📌 Service Adoption Drives Loyalty
+
+Customers utilizing multiple services show higher retention rates and lower churn probabilities.
+
+---
+
+## 🤖 Business Impact
+
+* Identified critical churn-driving factors.
+* Enabled early detection of at-risk customers.
+* Supported targeted retention initiatives.
+* Improved decision-making through predictive analytics.
+* Demonstrated how Business Intelligence and Machine Learning can work together to solve real-world business challenges.
+
+---
+
+## 🚀 Skills Demonstrated
+
+**SQL • Data Cleaning • ETL • Data Modeling • Power BI • DAX • Data Visualization • Python • Machine Learning • Random Forest • Predictive Analytics • Business Intelligence**
+
+---
+
